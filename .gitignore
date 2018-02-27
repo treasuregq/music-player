@@ -1,0 +1,25 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+## 哪些文件上传哪些文件不上传 git配置
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+src/**/*.css
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.idea
+.project
