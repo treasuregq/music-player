@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
+        'webpack-dev-server/client?http://localhost:4000',
         'webpack/hot/only-dev-server',
         'react-hot-loader/patch',                               //热更新
         path.join(__dirname, 'app/index.js'),
@@ -38,7 +38,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 query: {
-                    presets: ['react','es2015']
+                    presets: ['react','es2015','stage-2']
                 }
             },
             {
